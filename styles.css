@@ -1,36 +1,57 @@
 body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background: var(--color-darkblue);
-    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  background-image: linear-gradient(
+      135deg,
+      rgba(0, 2, 6, 0.8),
+      rgba(241, 11, 172, 0.8)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 body {
   color: white;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.4;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
-#container{
-background-color:black;
+#title {
+  color: orange;
+  background-color: #114;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#dropdown-label,
+#textarea-label {
+  color: rgba(0, 255, 0, 0.9);
+}
+
+#container {
+  background-color: rgba(0, 0, 0, 0.703);
   padding: 10px;
   width: 400px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 30px;
 }
-form{
-background-color:black;
+form {
+  background-color: rgb(46, 24, 24);
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -38,15 +59,28 @@ background-color:black;
   padding: 10px;
   margin: 10px;
   gap: 10px;
+  border-radius: 30px;
+}
+#number {
+  width: 225px;
+  text-align: center;
+}
+input,
+#dropdown {
+  border-radius: 4px;
+  padding: 4px;
 }
 #submit {
   background-color: green;
   padding: 5px;
   width: 80%;
+  border-radius: 5px;
+  color: yellow;
 }
-#textarea{
+#textarea {
   height: 50px;
   width: 80%;
+  border-radius: 5px;
 }
 #dropdown {
   width: 80%;
