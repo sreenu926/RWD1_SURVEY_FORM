@@ -86,3 +86,4 @@ input,
   width: 80%;
   height: 25px;
 }
+/* You don't need to worry about @ media query; it's already responsive. */
